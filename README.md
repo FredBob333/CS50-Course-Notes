@@ -50,8 +50,43 @@ Inherence: Only a factor you could obtain, like fingerprint, face, or other biom
 - some methods are more secure than others
 - text message based OTPs can be easy to fool through SIM swapping (where an adversary obtains and clones a SIM card ad gets access to you text messages)
 - more secure to obtain OTPs from app or secure device
+## Keylogging
+- Usernames, passwords, and OTPs are vulnerable to adversaries logging you keystrokes
+- Keylogging is accomplished by installing malicious software on a computer
+## Credential Stuffing
+- the use of an obtained list of usernames and passwords from a compromised website on another website
+- risk if you are using the same password on multiple websites
+## Social Engineering 
+- the use of social pressure and trust to compromise your credentials
+- perszon may pose as a trusted party to get your credentials or details about your life
+## Phishing 
+- uses social engineering in a technological way to obtain your information and details by posing as a trusted website
+- you may be directed to something that looks like a Google login page by in actually an adversaries page
+- never blindlt trust links provided in emails
+## Machine in the Middle Attacks 
+- routers and switches can be compromised by bery sophisticated attackers
+## Single Sign On (SSO)
+- SSO allows you to use Google or Facebook logins to access services not provided by Google or Facebook
+- easy access to other services with less friction and greater security
+## Password Managers
+- A peice of software that can manage complex passwords and save them for you
+- not need to memorize passwords
+- Many password managers will recognize phishing websites
+- downside is you are putting all your eggs in one basket
+- will need to remember one password to access all other passwords
+## Passkey
+- automaticallyu generated passwords that leverage cryptography
+- Passkeys involve a public and private key
+- Public key is held by service such as a website
+- Private key is held by your device
+- Passkeys will enable you to log in without the need to type in a password
+# CS50 Lecture 1
 ## Hashing
-One-way function that keeps sensitive information and data like passwords, messages, and documents secure.
+- One-way function that keeps sensitive information and data like passwords, messages, and documents secure.
+- hash values can have ambiguities where 2 input puts out 2 outputs
+- hashes should be unguessable
+- math is used to create hash outputs
+- 
 ## Dictionary attack
 When an adversary inputs one value after another from a dictionary as a way to break the password
 Problems arise when a user uses the same password and the hash value of these passwords are exactly the same. 
