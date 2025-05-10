@@ -86,7 +86,20 @@ Inherence: Only a factor you could obtain, like fingerprint, face, or other biom
 - hash values can have ambiguities where 2 input puts out 2 outputs
 - hashes should be unguessable
 - math is used to create hash outputs
-- 
+- hashing is helpful especially if a hacker leaks the information they have to do more work to figure out what the hashes are
 ## Dictionary attack
-When an adversary inputs one value after another from a dictionary as a way to break the password
-Problems arise when a user uses the same password and the hash value of these passwords are exactly the same. 
+- When an adversary inputs one value after another from a dictionary as a way to break the password
+- Problems arise when a user uses the same password and the hash value of these passwords are exactly the same.
+## Brute Force Attacks
+- Guessing all possible password combinations
+- Ex: 0000 -> 0001 -> 0002 etc
+- this method can take an extremely long time
+## Rainbow Table
+- contains all the passwords an adversary has and their hashing
+- this method can take up many gb and tb of storage
+## Salting
+- a method of changing the hash outcome to make sure hashes are different incase two or more individuals have the same password
+- salt is not ment to be private just ment to prevent leaking information
+- salt is chosen by the server not the individual
+
+If a company can email you your password after pressing forgot passwords. That company is not using best practice and is vulnerable to attacks
